@@ -1,0 +1,12 @@
+collections:
+  - name: derived.merge_emp_product
+    schema: ./schemas/merge_emp_product.schema.json
+    derive:
+      using:
+        sql: ./merge_emp_product.flow.sql
+      transforms:
+        - name: from_employees
+          source: Park_Street_Imports/PSI_DT/psi/test_emp_dt
+        - name: from_products
+          source: Park_Street_Imports/PSI_DT/psi/test_product_dt
+

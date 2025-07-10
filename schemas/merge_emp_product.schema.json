@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "e_id": { "type": "integer" },
+    "name": { "type": "string" },
+    "department": { "type": "string" },
+    "salary": { "type": "number" },
+    "join_date": { "type": "string", "format": "date" },
+    "pd_id": { "type": "integer" },
+    "product_name": { "type": "string" },
+    "category": { "type": "string" },
+    "price": { "type": "number" },
+    "stock_quantity": { "type": "integer" }
+  },
+  "required": ["e_id", "pd_id"]
+}
+
